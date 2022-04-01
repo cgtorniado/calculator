@@ -1,0 +1,46 @@
+/* Color Declaration*/
+.wrapper {
+  width: 250px;
+  min-height: 54vh;
+  margin: 10vh 50vw;
+  box-shadow: 1px 32px 35px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 32px 35px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 32px 35px 0px rgba(0, 0, 0, 0.2);
+}
+
+#answer,
+#input {
+  font-family: "Scientific Calculator LCD", sans-serif;
+  background: rgb(54, 161, 212);
+  background: linear-gradient(90deg, rgb(54, 161, 212) 0%, rgb(5, 213, 238) 49%, rgb(5, 238, 212) 99%);
+}
+
+#answer {
+  font-size: 2vh;
+  min-height: 4vh;
+}
+
+#input {
+  font-size: 3vh;
+  min-height: 10vh;
+}
+
+.btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 8vh;
+  border: 1px solid rgb(247, 247, 247) !important;
+  color: rgb(104, 104, 104) !important;
+}
+.btn:hover {
+  color: #36a1d4 !important;
+  background-color: aliceblue !important;
+}
+
+.row {
+  height: 8vh;
+}
+
+.bg-equal {
+  background: rgb(54, 161, 212);
+  background: linear-gradient(90deg, rgb(54, 161, 212) 0%, rgb(5, 213, 238) 49%, rgb(5, 238, 212) 99%);
+}

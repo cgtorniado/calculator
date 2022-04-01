@@ -1,0 +1,86 @@
+/* Color Declaration*/
+
+@mixin gradientcolors {
+    background: rgb(54,161,212);
+    background: linear-gradient(90deg, rgba(54,161,212,1) 0%, rgba(5,213,238,1) 49%, rgba(5,238,212,1) 99%);
+}
+
+@mixin boxshadows {
+    box-shadow: 1px 32px 35px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 1px 32px 35px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 32px 35px 0px rgba(0,0,0,0.2);
+}
+
+
+$primarycolor: #36a1d4;
+$font-color:rgb(104, 104, 104);
+
+
+
+$displayfont: 'Scientific Calculator LCD', sans-serif; 
+$buttonfont: Verdana, Geneva, Tahoma, sans-serif;
+
+$inputfontsize:3vh;
+$inputpminheight:10vh;
+
+$answerfontsize:2vh;
+$answerpminheight:4vh;
+
+
+
+$containerwidth:250px;
+$containerheight:54vh;
+
+$containermargins:10vh 50vw;
+
+
+
+// Main 
+
+.wrapper{
+    width:$containerwidth;
+    min-height:$containerheight;
+    margin:$containermargins;
+    @include boxshadows();
+   
+}
+
+
+#answer,
+#input {
+    font-family:$displayfont;
+    @include gradientcolors;
+}
+
+#answer{
+    font-size:$answerfontsize;
+    min-height:$answerpminheight
+}
+
+#input{
+    font-size: $inputfontsize;
+    min-height:$inputpminheight
+}
+
+.btn{
+    font-family: $buttonfont;
+    height:8vh;
+    border:1px solid rgb(247, 247, 247) !important;
+    color:$font-color !important;
+
+    &:hover {
+        color:$primarycolor !important;
+        background-color:aliceblue !important;
+    }
+}
+
+.row{
+    height:8vh;
+}
+
+
+.bg-equal{
+    @include gradientcolors(); 
+
+}
+
